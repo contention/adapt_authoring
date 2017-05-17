@@ -174,7 +174,7 @@ define(function(require){
     launchCoursePreview: function() {
       var courseId = Origin.editor.data.course.get('_id');
       var tenantId = Origin.sessionModel.get('tenantId');
-      this.previewWindow.open('/preview/' + tenantId + '/' + courseId + '/', 'preview');
+      this.previewWindow.location.href = '/preview/' + tenantId + '/' + courseId + '/', 'preview';
     },
 
     previewProject: function(e) {
