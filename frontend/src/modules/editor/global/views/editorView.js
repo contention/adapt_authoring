@@ -174,8 +174,7 @@ define(function(require){
     launchCoursePreview: function() {
       var courseId = Origin.editor.data.course.get('_id');
       var tenantId = Origin.sessionModel.get('tenantId');
-
-      window.open('/preview/' + tenantId + '/' + courseId + '/', 'preview');
+      this.previewWindow.open('/preview/' + tenantId + '/' + courseId + '/', 'preview');
     },
 
     previewProject: function(e) {
@@ -188,6 +187,9 @@ define(function(require){
         $('.navigation-loading-indicator').removeClass('display-none');
         $('.editor-common-sidebar-preview-inner').addClass('display-none');
         $('.editor-common-sidebar-previewing').removeClass('display-none');
+
+        // TODO need to open a generic loading page
+        this.previewWindow = window.open('');
 
         $.ajax({
           method: 'get',
