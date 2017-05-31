@@ -1,8 +1,8 @@
 {
   "root": "",
   "dataRoot": "data",
-  "rootUrl": "http://localhost:5000/",
-  "sessionSecret": "your-session-secret",
+  "rootUrl": "https://fms-adapt.herokuapp.com/",
+  "sessionSecret": "owijowejrowerjowijrowiejrowirjowijerojfkms",
   "outputPlugin": "adapt",
   "auth": "local",
   "isProduction": true,
